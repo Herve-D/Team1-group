@@ -7,11 +7,11 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
+       /* stage('Checkout') {
             steps {
                 git branch: 'develop', url: 'https://github.com/Herve-D/Team1-group.git'
             }
-        }
+        }*/
 
         stage('Build Backend') {
             steps {
