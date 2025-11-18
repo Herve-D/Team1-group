@@ -26,7 +26,7 @@ pipeline {
                 withSonarQubeEnv('sonar-server') {
                     dir('demo-app') {
                         sh '''
-                            mvn clean verify sonar:sonar                               -Dsonar.projectKey=demo-backend                               -Dsonar.host.url=$SONAR_HOST_URL                               -DskipTests
+                            mvn clean verify sonar:sonar -Dsonar.projectKey=demo-app -Dsonar.host.url=$SONAR_HOST_URL -DskipTests
                         '''
                     }
                 }
